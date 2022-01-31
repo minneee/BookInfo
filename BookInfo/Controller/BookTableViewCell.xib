@@ -11,37 +11,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookTableViewCell" rowHeight="167" id="KGk-i7-Jjw" customClass="BookTableViewCell" customModule="BookInfo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="358" height="167"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookTableViewCell" rowHeight="155" id="KGk-i7-Jjw" customClass="BookTableViewCell" customModule="BookInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="155"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="358" height="167"/>
+                <rect key="frame" x="0.0" y="0.0" width="358" height="155"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2id-1c-mWq">
-                        <rect key="frame" x="15" y="16" width="100" height="134.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2id-1c-mWq">
+                        <rect key="frame" x="15" y="15" width="90" height="120"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="C8D-Hi-Adw"/>
+                            <constraint firstAttribute="width" constant="90" id="C8D-Hi-Adw"/>
+                            <constraint firstAttribute="height" constant="120" id="eBm-2j-jGC"/>
                         </constraints>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="57" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-XX-b9r">
-                        <rect key="frame" x="135" y="15" width="208" height="137"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-XX-b9r">
+                        <rect key="frame" x="125" y="38.5" width="218" height="96.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69p-jb-igO">
-                                <rect key="frame" x="0.0" y="0.0" width="208" height="23.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRn-Se-OBT">
-                                <rect key="frame" x="0.0" y="59.5" width="208" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="41.5" width="218" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.72083589219555411" green="0.4977077004440979" blue="0.16446504712800111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-zT-6WH">
-                                <rect key="frame" x="0.0" y="116.5" width="208" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="80.5" width="218" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -50,12 +51,11 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="2id-1c-mWq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0Um-ll-O0L"/>
-                    <constraint firstAttribute="bottom" secondItem="2id-1c-mWq" secondAttribute="bottom" constant="15" id="8Yb-YE-q4G"/>
+                    <constraint firstItem="O6l-XX-b9r" firstAttribute="bottom" secondItem="2id-1c-mWq" secondAttribute="bottom" id="9yf-EP-JFy"/>
                     <constraint firstAttribute="trailing" secondItem="O6l-XX-b9r" secondAttribute="trailing" constant="15" id="Ggx-Zx-BdN"/>
-                    <constraint firstItem="O6l-XX-b9r" firstAttribute="bottom" secondItem="2id-1c-mWq" secondAttribute="bottom" id="Ic2-i8-388"/>
-                    <constraint firstItem="O6l-XX-b9r" firstAttribute="top" secondItem="2id-1c-mWq" secondAttribute="top" id="NYq-vv-iza"/>
                     <constraint firstItem="O6l-XX-b9r" firstAttribute="leading" secondItem="2id-1c-mWq" secondAttribute="trailing" constant="20" id="OdF-xb-q3M"/>
                     <constraint firstItem="2id-1c-mWq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WTc-Z8-GAF"/>
+                    <constraint firstAttribute="bottom" secondItem="2id-1c-mWq" secondAttribute="bottom" constant="15" id="gdL-nv-5Cs"/>
                     <constraint firstItem="2id-1c-mWq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y6M-FM-lMs"/>
                 </constraints>
             </tableViewCellContentView>
@@ -66,11 +66,10 @@
                 <outlet property="cellPriceLabel" destination="zRn-Se-OBT" id="qIs-fz-OOZ"/>
                 <outlet property="cellTitleLabel" destination="69p-jb-igO" id="SGH-WT-iuc"/>
             </connections>
-            <point key="canvasLocation" x="159.42028985507247" y="140.95982142857142"/>
+            <point key="canvasLocation" x="159.42028985507247" y="136.94196428571428"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="trash.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
